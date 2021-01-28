@@ -1,0 +1,76 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Header = "Grade Calculator";
+}
+
+@model GradeCalculatorModel
+
+<body>
+
+    <!--Grade Calculator Heading-->
+    <h1>
+        @ViewBag.Header
+    </h1>
+
+    <!--List of Grade Areas-->
+    <form method="post">
+        <table>
+            <tr>
+                <th>
+                    <label>Assignments (out of 100%)</label>
+                </th>
+                <td>
+                    <input id="Assignments" asp-for="Assignments" />
+                </td>
+            </tr>            
+            <tr>
+                <th>
+                    <label>Group Project (out of 100%)</label>
+                </th>
+                <td>
+                    <input id="Group" asp-for="Group" />
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label>Quizzes (out of 100%)</label>
+                </th>
+                <td>
+                    <input id="Quizzes" asp-for="Quizzes" />
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label>Exams (out of 100%)</label>
+                </th>
+                <td>
+                    <input id="Exams" asp-for="Exams" />
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label>INTEX (out of 100%)</label>
+                </th>
+                <td>
+                    <input id="Intex" asp-for="Intex" />
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <br /><button onclick="gradeCalculator()" type="submit" id="submitButton" name="submitButton">Calculate Grade</button>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <div asp-validation-summary="All" style="color:red"></div>
+                </th>
+            </tr>
+        </table>
+
+    </form>
+
+
+</body>
+    

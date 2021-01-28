@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Header = "Devyn Smith is Now Using Razor";
+}
+
+<!DOCTYPE html>
+<!--Assignment 2, Devyn Smith, Section 3
+    Program that tells a bit about me and can calculate grades-->
+
+<html>
+
+<body>
+    <!--Title (my name)-->
+    <h1>
+        @ViewBag.Header
+    </h1>
+
+    <!--Image of me-->
+    <img src="~/img/devynHiking.jpg" />
+
+    <!--Paragraph about this class-->
+    <p>
+        I hope to further advance my programming skills and hopefully develop more of a love for it. I especially want
+        to learn more of the front end side of theings, so I'm especially excited for React when we get to that
+    </p>
+
+    <!--Job List Heading-->
+    <p>
+        Top 3 Jobs:
+    </p>
+
+    <!--List of Jobs-->
+    <ul class="JobList">
+        <li>1: Project Management</li>
+        <li>2: Front-end Development</li>
+        <li>3: SQL/Database Management</li>
+    </ul>
+
+    
+</body>
+
+
+</html>

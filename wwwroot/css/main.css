@@ -1,0 +1,113 @@
+﻿/*main style sheet for each of the views
+*/
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar-item {
+    float: left;
+}
+
+.navbar-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar-item a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #019DE8;
+}
+
+body {
+    font-family: 'Agency FB';
+    background-color: midnightblue;
+    color: white;
+    margin: 0;
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+label {
+    font-size: 20px;
+    color: black;
+    width: 200px;
+}
+
+table {
+    width: 350px;
+    color: black;
+}
+
+form {
+    background-color: white;
+    width: 350px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+input {
+    font-family:'Agency FB';
+    font-size: inherit;
+}
+
+ul.JobList li {
+    list-style-type: none;
+}
+
+th {
+    width: 200px;
+    text-align: left;
+}
+
+p {
+    width: 30%;
+}
+
+img {
+    width: 30%;
+    padding-left: 15px;
+}
+
+h1 {
+    padding-left: 15px;
+}
+
+h2 {
+    padding-left: 15px;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+p {
+    padding-left: 15px;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    color: white;
+    text-align: center;
+    display: block;
+    bottom: 0px;
+    position: absolute;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+}
